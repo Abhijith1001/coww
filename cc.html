@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Add styles for header section */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Add styles for the product section */
+        .product-section {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Add styles for the image */
+        .product-image {
+            width: 100%;
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Add styles for the product description */
+        .product-description {
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* Add styles for the contact form */
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-top: 20px;
+        }
+
+        /* Add styles for the image cards */
+        .image-card {
+            width: 30%;
+            height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+        .product-description {
+      text-align: center;
+      margin: 2rem auto;
+      width: 80%;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .text {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .product-description {
+        width: 90%;
+      }
+
+      .title {
+        font-size: 1.5rem;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+    }
+
+    .cow-contact-form {
+    text-align: left;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid black;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .cow-contact-form input[type="text"],
+    .cow-contact-form textarea {
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .cow-contact-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cow-price {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: green;
+    }
+
+    .buy-button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Add header section -->
+    <header>
+        <h1>Cuddly Cows for Sale</h1>
+    </header>
+
+    <div class="product-section">
+        <h1>Show Your Love for Cows, Give Them a Hug!</h1>
+
+
+        <!-- Add product image -->
+        <img class="cow-image"
+            src="data:image/jpeg;base64,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"
+            alt="Cow Image">
+
+        <!-- Add product description -->
+        <div class="product-description">
+            <h2>Nandini</h2>
+            <p> Celebrate Cow Hug Day with Nandini, a gentle and majestic creature that brings joy and nourishment to those around her. </p>
+        </div>
+        <div class="cow-price">Price: ₹100,000</div>
+      <!-- Add the buy button -->
+      <button class="buy-button">buy</button>
+    </div>
+    <!-- Add product section -->
+    <div class="product-section">
+        <h1>Hug a Cow, Share the Love!</h1>
+
+        <!-- Add product image -->
+        <img class="cow-image"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIQAxgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAgEDBAUGBwj/xAA7EAABBAEDAgMGAwYFBQEAAAABAAIDEQQFEiExQQYTURQiMmFxgZGhsQcVUmLB0SM0QuHwJHKCovEW/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAUBAwYEAv/EACkRAAICAQMDBAICAwAAAAAAAAABAgMRBAUSEyExMjNBcSJRgaEjNMH/2gAMAwEAAhEDEQA/AMqkUnpTS04kEpTtT0ikECUik9IpAC0ik9IpACUilZtUhqAK9qmlXkZcGPxJI0OHVti/wVGTnx+zOfBI34bEh6N/56Llu1tFPrkdVOjuu9CMqrRtWJpObDlsMbJXSSRAb3FtXaz6V1VkbYKcfDKbK5VzcZFe1G1PSKVhWV0ilZSNqAK6RSs2opAFdIpPSKQAm1RSspRSAEIQnpCAGpFJ6RtQSLSAE4amDUZIK9qKTPdGwe+9rfqUjZ4HP2NmjLvTcF5dkP2euEv0TtRSspFKcnkTasHWM0YWMdp/xn8MA/VZ8jgxvSyey1mXE2aUvcAT8+fySjc9xWnj04+p/wBDbbdvd8upL0r+zQsZHlOkyMlvm5LhQd3+VelLMw/IhYYpYDNHIObr8CO32VowohPuprXDlXNxoid7hYJ4tZKU3J5ZqVBRWEV4GQzT3mJn+Ve4kWSdnyvt91vgLCwocdr3CMjcwjlpHUd1gSxu0h75sYyPjFBzHuJDR2/VONv3V0/47O6FOv21W/nDszeUggAEnoOpTQkSRse0inCwuM8RavkZOfLjYsgZiRHY54PxO7/a+FotTrK6K+o/nwINPpJ3WcPB1nnwEkCVnHXlWNLXfCQfovN2TiNjnR7nvHJ5s/YLP07UcqN2+J7HsqwGPu/qlcN7Wfyh2GctmePxl3O6LVBasfS8z27GEm3a7uFl0nldkbIKcfDEtlcq5OEvKK9qNqspQvZ4E2opPSKQBXSE9IQAwCmk1KQFBIoatTqWpPic6OIBoHV5W5rhczq+I7ImLHExjqa62ku8321VpQ7J+RvtFFdk2592vBotS1Y4482V7ZGk0D1Wsxs+HMkLWNLXdnBxoLqI9C06TS5RPA2n8F0stE/Ra2TQYcMNm0/GyGsN8k7g7/tsfNZtWRa7t5NGq5J4S7Gw0nxA/BDYNQLpYOjZBZcz5H1C6zFezLaDjuD2kXY7LhcXH9qcd7XDiqfxX2XR6XqGHoMXnallsghLSzaTZdfou+rdtRXDprv+hfdtdE58/BtJ4XQl3mOG93IBHACwp9kNbjtDvhBK3xydO1zS4M7T5GvYRTfUfULR5bdr97gaLRweyU2SlKbc/Iyp4qCUOyMeOJuQ+ne6OxI6qhxLpSBexprooLpgOK5P5K/Gg3Vu6+tLwWmyx2hrWEN5PHz+y2OVpg/drnSNHmvb0rqPRYulSxQysa4jdYoELQftA8aahpmTHHprmBu/y/eYTucBbvsLaPx9FZVW5vCKLZ8TO1aY4mjQ+xExzOjLPdHAr+q4oYT8eMtbutw5N3ZXSYmfn5/htmXmY7HOle5oEPY9z8lXhaDLqr2x5UmwOc1pDByB9bXt2SS4zfZAoxeZRRrtH8Jz6rpc2cBJjNilP+IZL80CrG2uKF8qJsKNs3/SHYGgAgEEO+a7vXtQwtM0U6RpUbi4x+WwQttsY727pfX1Nnlcx4e0PIjmE2SSGdo3G170Vd2slhLt/wAOazUQog5zNpouK+HH3OAaHi9q2FKyuFFLc6emNNarj8GSvud1jm/kSlFKylFK4qEpFJ6UUoASkJ6UoAmlICakAKCSAFj5mI3Kj27tj/4wOVlUppV2Vwsjxmso9V2Srlyi8M0ekeHNQn1B0TMmoQNxe8/D9B3+i6PxdocjtOhlwJnsdAAxw3e7sqrrsfmrNNzfYZHu8vzA4AHmiFtnatiTQPaS5jy0gBzfl6rG7jt2or1GaoNwNDp9yU0nOXdHnzdIh8q3yOkkI5c0mlix4MDsuLHzS3IbIHRRxOAO1zh1XRtxnGLY+RxHQ1wsYaRjxZsGcwPdJjuMjGk8XVf3V0No1CXN9sF891ok+K+SrQ/DOf4c0uXHbMXCRm9tm6eB0I9KH5JZXNZBtLtxa0Od8yugzdSD8YPeeOL+65+WHzG+9fNDjslM5OTyxnWmkK1jHdK29llwRMIIF2PVIY/Lb7jenQKMQ/4zwbAJ7noV4LizFxmO1nHlfW6NjqsdD6rayeGdHyoi/IYZZd+4uc49Vp5pn48pk3e65hH3/wCBZeNnl2FvZZugOV7UmiiyOUaSSDNw8nUosNjPYxluMdWXcgOPHpZKzo8aeTHYdjWOeLJHCq8PPk9p1GGd255k80fIHj+gW7paXS7Zp9RUrJfJn9RuV1FjgjV4eneU2pXb6+EdgtgG0KAqk9KKTqjT10R4wQpv1Fl8uU2Iik9IpXlBXSKT0ghTkBKUEKykUoArpCekIAakUnpFKCRdqNqelNIIEpTSbailACgKaTAKR1UPwSvJodZkEONHGDxY5+Sy8WpYWv2i3cgD0WLqzYBiPkzWSPhjkLGsjeGukcT8N9hXU+hWaMrLkxWDDwMNkFAtAkJNfWlgbKnyf2bmu38FhDyROPLmkDvQVUcQZN5vWxX+6kz6rM1rH4mOAw2Bv938lVleIPZsiCHL07Gtx2ybJTY+YXjpMs6j/Ro9ey5DI2MlraeDQ9L5WdpUzXwhjSCLqvT5rI8TaZA7DjzsZu6I0Qe7fkT6LncSb2KHIkZW7hrefi3Gh+qOHbBDn8m60bnXJ5Gj3Xx0DfoV0RC4zRdRgwpXZeZNsiYRGH9uTVn05XatLXtD2EFruWkdwtRs1y6bqflGZ3ap9RWLwxKRSchRSd5FAlI2p6RSAEpFJ6UUjIC0opPSKRkCshCekIySNSkBNSkBeSRKRSekAIyAtIpPSKRkkUBDqY3ceg5TgLUeKtYi0XT2veC6WeQRxsHfuT9hf5Kq2zhByPdUOc1E2TMZm1oc0f4pJI7Ad/xpanEzXwZOXEYWQwMyC2BjRQ2gAX+IP5LKbqUc+Bj5MLg4Dix6rC1GF+dKMnBcHNPEsY+IH5LHWycnk2dcUorBn/vB7oy1gbuNkcLhdP0DMizJs7UzJNnSvLW1yxgPz+i3OdLLpEXnSwZLYB8T3RkgfX0WJD41012RC6Weo2mjRuuirjzw8BJxi8naY+E0eHpoZw4h8Tr3fQ8rz/U9uDiwzFpsvAY31IHH5rtcXXcHXITiYOSKczafkKpeb63nBuoMglo+yt2nb0c8ccfgpjHLOd2eTG16aWLRY2FtedNyRyKaP1srf/s28R8/ufNlFD/LFx7fw/pS0k2Lk6w2fTMUtdJjxslcy+r+d1H/AM/yXMvjmxpzFK18cjDyOhBC7tPJ1tY8o5boc0+XdM+hC2uyjauO8A+LnapWl6mR7c1lxSdpWgdD/MOvzXaltFaSi5WQUjP21OubiyqkUrKUbVdkqEpBCekUjJJXSKT0ikAV0hWUoRkBqU0mpFLzkBaU0m2opRkBaU0mAU0gkhrbXjfjbUJte8X+y4htuO/2aAE8bgfed+I/BoXsWU50WLLJGQHtYdpPS64/NeaaJ4VGn5MmoZUhmnie4xNHTm6J9SbSnc9TGC4DTbdM7Hyx2MnE0vVdHypm48sWXgZHvuhc7a4P77eK/otXDm6jnZZh0ds0z+xjtrmD+bil10Nk04k+7XTvwT/RcszVP/zuRl4WPNPEBMXERlvvB3IPvA9jSQ1WSnnPke2RVWMeDoINH8qIDxHnZGbKRYw4pfd+jiKv6dPqqM/QsTU4/JbpGFjw9GmOMCQD0vt9lgw69iSM3+YMX+N0h3SOP3WXg+K9KjgO7Jsju/g8KM2Z7EOdeDnvEegu8HvxszTcl7mZBLaf1YQL6+i5CfKkmmbI5xL917j3Pqt54z8THXMiNsAcMaEENB/1E1z9OFzg92vUC/uu2CeMy8nDN9+x137PpXN8UxOJJ3RSB/zsX+oC7HxD4ewtV96Vm2YdJG9aXNfs2xLfPnu4aHCFh+Z5J/Rd9JyPXhcOpm1bmIw00E6sSPL8zQdT0bJizMBxc6Ih7JGfE0+tf86r2DR85mqaXjZsY2+awFzT/pd0I+xtczmbWSNLB71836X/ALLfeG5mvgmiaK2u319Rz+Y/NM9r1cup05fIs3PSRVfUj8GzIUUrCFFLR5EAlIpPSilGQFpRSekUjICUhOQhGQJpFJ6U0vGScCUivknpFIyAtKQ1NSkBGQNbr0nlYQH8TufsL/WlomSAt6dW3S2nixxZBjem8k/gtPCRNGNg4rg/JZXdZZ1H0jU7Usaf7Y+HThG/dVucb+p/+Lg/2kYEuNqcWcAWsmZsLh2c2/6V+C7HDmOO7yZjbA6hfFKvxniDUvD2Y0UfLHnMNdC3n9LC46J8bEdl8OdbR5O/JkeynyOLewvsqJCC7cXcHspb8PCUi2biOU2QpHIsNrv3Tta572tY0kuNNA7qsEiNv3XS+CNNObrcL3A+XA0yu44B7fr+S8zlxTbPcIOUsHYeHsN2madDhkjzWtDn10Dj1/st7FkiSUMB5qrCxcmAQxCVjae/kkn8FjwPd5gN0COD+qTzlzeRxCPFYQ+pANyGjpuH9f8AdbHwq8jUZ46IDorHp1C12c4yzxloJAbRHos7ww5v73Y1p3OMT7/9V16F4vh9nHr1mif0dUQopWkKKWt5GSaK6RSekI5BgSlFKxRSOQYEpCakI5BglSEIUEkqaUIUATSYBCEAc546O3TYnDrvP6LU6Tyxo/kQhZfdPff8Go2v2F/JZnMHtRcByQD+Kw9dcW+F9Ta00GwuA+hCELgh60MZ+hnkMfLioPwn6qEJyJS17QPKA6UvRv2dRt/d2Qa5fMGu+lD+6ELn1XtnRpvcOq1Zg8jd3tayFo8yvQcIQli8DIy/LaX3XNI8K+94lkuuMeSuP5m/3Qhdmh/2InFr/YkdoQikIWrMoyKRShCAJpRShCAAhCEIA//Z"
+            alt="Cow Image">
+
+        <!-- Add product description -->
+        <div class="product-description">
+            <h2>Kalyani</h2>
+            <p> Whether you're looking for a new addition to your farm or simply want to show your appreciation for these gentle giants, Kalyani is the perfect choice. With her calm and friendly demeanor, she'll quickly become a beloved member of your family. So don't wait – order Kalyani today and experience the joy and wonder of Cow Hug Day like never before!</p>
+        </div>
+        <div class="cow-price">Price: ₹100,000</div>
+      <!-- Add the buy button -->
+      <button class="buy-button">buy</button>
+    </div>
+    
+
+    <!-- Add contact form -->
+    <div class="card">
+       <center> <h1>contact</h1>
+        <form class="cow-contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <input type="submit" value="Contact Seller">
+        </form>
+        <footer>
+          <p>&copy;Joby thottupuram</p>
+        </footer>
+      </div><br></center>
